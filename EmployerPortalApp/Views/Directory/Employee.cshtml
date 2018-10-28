@@ -1,0 +1,50 @@
+﻿@model IEnumerable<EmployerPortal.Common.Models.Employee>
+
+
+
+@{
+    ViewData["Title"] = "Employees for selected employer";
+}
+
+<h2>Employees for selected employer</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WorkPhone)
+            </th>
+            
+          
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.JobTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WorkPhone)
+                </td>
+               
+
+            </tr>
+        }
+    </tbody>
+</table>

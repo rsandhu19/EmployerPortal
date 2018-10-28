@@ -1,0 +1,110 @@
+﻿@model IEnumerable<EmployerPortal.Common.Models.Employer>
+@using EmployerPortalApp.Controllers;
+@{
+    ViewData["Title"] = "Employer";
+}
+
+<h2>Employer</h2>
+@section Scripts{ 
+<script type="text/javascript">
+    $(function () {
+        $('.details').click(function () {
+            var $buttonClicked = $(this);
+            var id = $buttonClicked.attr('data-id');
+
+            $.ajax({
+                url: '@Url.Action("Employee")',
+                type: 'GET',
+                data: { id: id },
+                success: function (partialView) {
+                    $('#detailsPlace').html(partialView);
+                    $('#detailsPlace').show();
+                }
+            });
+        });
+    });
+</script>
+    }
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            @*<th>EmployerId</th>
+            <th>EmployerName</th>
+            <th>Street1</th>
+            <th>Street2</th>
+            <th>City</th>
+            <th>State</th>
+            <th>ZipCode</th>
+            <th>Phone</th>*@
+
+            <th>
+                @Html.DisplayNameFor(model => model.EmployerId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Street1)
+            </th>         
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.State)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ZipCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employer in Model)
+        {
+        <tr>
+            <th scope="row">
+                @*<a id="employerId" data-value="@employer.EmployerId"
+            href="@Url.Action("Employee", "Home", new { id = @employer.EmployerId })" class="btnEdit">@employer.EmployerId</a>*@
+                <a href="" class="details" data-id="@employer.EmployerId">@employer.EmployerId</a>
+            </th>
+
+            <td>
+                @Html.DisplayFor(modelItem => employer.EmployerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => employer.Street1)
+            </td>           
+            <td>
+                @Html.DisplayFor(modelItem => employer.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => employer.State)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => employer.ZipCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => employer.Phone)
+            </td>
+
+        </tr>
+        }
+
+
+    </tbody>
+</table>
+
+@*<div id="employeesList">
+
+        @Html.Partial("Employee", Model.Listcar)
+
+    </div>*@
+
+<div id="detailsPlace" class="dialog_content3" style="display:none">
+    @Html.PartialAsync("Employee")
+</div>
+
+

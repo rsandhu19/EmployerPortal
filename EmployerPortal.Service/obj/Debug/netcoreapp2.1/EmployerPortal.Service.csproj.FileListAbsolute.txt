@@ -1,0 +1,12 @@
+C:\Users\Rupinder\source\repos\NymityGridApp\EmployerPortal.Service\bin\Debug\netcoreapp2.1\EmployerPortal.Service.deps.json
+C:\Users\Rupinder\source\repos\NymityGridApp\EmployerPortal.Service\bin\Debug\netcoreapp2.1\EmployerPortal.Service.dll
+C:\Users\Rupinder\source\repos\NymityGridApp\EmployerPortal.Service\bin\Debug\netcoreapp2.1\EmployerPortal.Service.pdb
+C:\Users\Rupinder\source\repos\NymityGridApp\EmployerPortal.Service\bin\Debug\netcoreapp2.1\EmployerPortal.Common.dll
+C:\Users\Rupinder\source\repos\NymityGridApp\EmployerPortal.Service\bin\Debug\netcoreapp2.1\EmployerPortal.Common.pdb
+C:\Users\Rupinder\source\repos\NymityGridApp\EmployerPortal.Service\obj\Debug\netcoreapp2.1\EmployerPortal.Service.csprojAssemblyReference.cache
+C:\Users\Rupinder\source\repos\NymityGridApp\EmployerPortal.Service\obj\Debug\netcoreapp2.1\EmployerPortal.Service.csproj.CoreCompileInputs.cache
+C:\Users\Rupinder\source\repos\NymityGridApp\EmployerPortal.Service\obj\Debug\netcoreapp2.1\EmployerPortal.Service.AssemblyInfoInputs.cache
+C:\Users\Rupinder\source\repos\NymityGridApp\EmployerPortal.Service\obj\Debug\netcoreapp2.1\EmployerPortal.Service.AssemblyInfo.cs
+C:\Users\Rupinder\source\repos\NymityGridApp\EmployerPortal.Service\obj\Debug\netcoreapp2.1\EmployerPortal.Service.csproj.CopyComplete
+C:\Users\Rupinder\source\repos\NymityGridApp\EmployerPortal.Service\obj\Debug\netcoreapp2.1\EmployerPortal.Service.dll
+C:\Users\Rupinder\source\repos\NymityGridApp\EmployerPortal.Service\obj\Debug\netcoreapp2.1\EmployerPortal.Service.pdb
